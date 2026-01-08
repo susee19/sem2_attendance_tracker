@@ -1,0 +1,138 @@
+/* =======================
+   1. GLOBAL RESET & BASE
+   ======================= */
+
+* {
+    box-sizing: border-box;
+}
+
+/* Removes default spacing & sets base font */
+body {
+    margin: 0;
+    font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    background: linear-gradient(135deg, #0f172a, #020617);
+    color: #e5e7eb;
+}
+
+/* =======================
+   2. MAIN CONTAINER
+   ======================= */
+
+.container {
+    min-height: 100vh;                 /* Full screen height */
+    display: flex;                     /* Enable flexbox */
+    flex-direction: column;            /* Vertical layout */
+    align-items: center;               /* Center horizontally */
+    padding: 40px 20px;                /* Space around content */
+}
+
+/* =======================
+   3. HEADER SECTION
+   ======================= */
+
+.container > .head {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.container > .head > h1 {
+    font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 2.2rem;
+    font-weight: 600;
+    letter-spacing: -.015em;
+    line-height: 1.05;
+    margin: 0;
+    color: #f8fafc;
+}
+
+/* Subtle underline effect */
+.container > .head > h1::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #ef4444;
+    margin: 10px auto 0;
+    border-radius: 5px;
+}
+
+/* =======================
+   4. BUTTON GRID (BODY)
+   ======================= */
+
+.container > .body {
+    display: flex;
+    flex-wrap: wrap;                   /* Wrap on small screens */
+    gap: 24px;                         /* Space between buttons */
+    justify-content: center;
+    align-items: center;
+    max-width: 650px;
+}
+
+/* =======================
+   5. SUBJECT BUTTONS
+   ======================= */
+
+.container > .body > button {
+    width: 110px;
+    height: 110px;
+    background: linear-gradient(145deg, #ef4444, #b91c1c);
+    border-radius: 50%;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.35);
+    transition: all 0.25s ease;
+}
+
+/* Anchor fills full button */
+.container > .body > button > a {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    text-align: center;
+    padding: 10px;
+    line-height: 1.2;
+}
+
+/* =======================
+   6. HOVER & ACTIVE EFFECTS
+   ======================= */
+
+.container > .body > button:hover {
+    transform: translateY(-6px) scale(1.05);
+    box-shadow: 0 16px 30px rgba(0, 0, 0, 0.45);
+}
+
+.container > .body > button:active {
+    transform: scale(0.95);
+}
+
+/* =======================
+   7. RESPONSIVE DESIGN
+   ======================= */
+
+@media (max-width: 480px) {
+    .container > .body > button {
+        width: 90px;
+        height: 90px;
+    }
+
+    .container > .head > h1 {
+        font-size: 1.8rem;
+    }
+}
+

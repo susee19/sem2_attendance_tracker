@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    background: linear-gradient(135deg, #0f172a, #020617);
+    color: #e5e7eb;
+}
+.container {
+    min-height: 100vh;                 /* Full screen height */
+    display: flex;                     /* Enable flexbox */
+    flex-direction: column;            /* Vertical layout */
+    align-items: center;               /* Center horizontally */
+    padding: 40px 20px;                /* Space around content */
+}
+.container  > h3 {
+    font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 2.2rem;
+    font-weight: 600;
+    letter-spacing: -.015em;
+    line-height: 1.05;
+    margin: 0;
+    color: #f8fafc;
+}
