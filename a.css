@@ -2,11 +2,11 @@
     box-sizing:border-box;
 }
 .container {
-    min-height: 100vh;                 /* Full screen height */
-    display: flex;                     /* Enable flexbox */
-    flex-direction: column;            /* Vertical layout */
-    align-items: center;               /* Center horizontally */
-    padding: 40px 20px;                /* Space around content */
+    min-height: 100vh;               
+    display: flex;                   
+    flex-direction: column;            
+    align-items: center;               
+    padding: 40px 20px;                
 }
 
 body {
@@ -84,26 +84,26 @@ body {
     height: 45px;
     font-size: 1rem;
     font-weight: 500;
-    color: #f1f5f9;                         /* light text */
-    background: rgba(255, 255, 255, 0.06);   /* subtle frosted */
+    color: #f1f5f9;                         
+    background: rgba(255, 255, 255, 0.06);   
     border: 1px solid rgba(255, 255, 255, 0.15);
     border-radius: 10px;
     padding: 0 14px;
-    outline: none;                           /* removes blue outline */
+    outline: none;                         
 
-    transition: all 0.25s ease;              /* smooth interaction */
-    backdrop-filter: blur(4px);              /* frosted glass effect */
+    transition: all 0.25s ease;             
+    backdrop-filter: blur(4px);              
 }
 
 /* FOCUS STATE */
 .container > .content > input:focus {
-    border-color: #ef4444;                   /* matches button red */
+    border-color: #ef4444;                   
     background: rgba(255, 255, 255, 0.10);
-    box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.25);  /* glow ring */
+    box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.25);  
 }
 
 /* PLACEHOLDER STYLE */
 .container > .content > input::placeholder {
-    color: #94a3b8;                          /* slate grey */
+    color: #94a3b8;                         
     font-weight: 400;
 }
