@@ -1,12 +1,10 @@
-/* =======================
-   1. GLOBAL RESET & BASE
-   ======================= */
+
 
 * {
     box-sizing: border-box;
 }
 
-/* Removes default spacing & sets base font */
+
 body {
     margin: 0;
     font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -15,9 +13,7 @@ body {
     color: #e5e7eb;
 }
 
-/* =======================
-   2. MAIN CONTAINER
-   ======================= */
+
 
 .container {
     min-height: 100vh;                 /* Full screen height */
@@ -27,9 +23,7 @@ body {
     padding: 40px 20px;                /* Space around content */
 }
 
-/* =======================
-   3. HEADER SECTION
-   ======================= */
+
 
 .container > .head {
     margin-bottom: 40px;
@@ -46,7 +40,7 @@ body {
     color: #f8fafc;
 }
 
-/* Subtle underline effect */
+
 .container > .head > h1::after {
     content: "";
     display: block;
@@ -57,22 +51,18 @@ body {
     border-radius: 5px;
 }
 
-/* =======================
-   4. BUTTON GRID (BODY)
-   ======================= */
+
 
 .container > .body {
     display: flex;
-    flex-wrap: wrap;                   /* Wrap on small screens */
-    gap: 24px;                         /* Space between buttons */
+    flex-wrap: wrap;                   
+    gap: 24px;                         
     justify-content: center;
     align-items: center;
     max-width: 650px;
 }
 
-/* =======================
-   5. SUBJECT BUTTONS
-   ======================= */
+
 
 .container > .body > button {
     width: 110px;
@@ -91,7 +81,7 @@ body {
     transition: all 0.25s ease;
 }
 
-/* Anchor fills full button */
+
 .container > .body > button > a {
     width: 100%;
     height: 100%;
@@ -108,9 +98,7 @@ body {
     line-height: 1.2;
 }
 
-/* =======================
-   6. HOVER & ACTIVE EFFECTS
-   ======================= */
+
 
 .container > .body > button:hover {
     transform: translateY(-6px) scale(1.05);
@@ -121,9 +109,6 @@ body {
     transform: scale(0.95);
 }
 
-/* =======================
-   7. RESPONSIVE DESIGN
-   ======================= */
 
 @media (max-width: 480px) {
     .container > .body > button {
