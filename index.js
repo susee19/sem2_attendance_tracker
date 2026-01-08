@@ -1,12 +1,12 @@
 
 $(".m").click(() => localStorage.setItem("tot", 39));
-$(".c").click(() => localStorage.setItem("tot", 42));
-$(".ct").click(() => localStorage.setItem("tot", 71));
-$(".e").click(() => localStorage.setItem("tot", 37));
-$(".i").click(() => localStorage.setItem("tot", 34));
-$(".eg").click(() => localStorage.setItem("tot", 19));
-$(".cl").click(() => localStorage.setItem("tot", 15));
-$(".el").click(() => localStorage.setItem("tot", 19));
+$(".c").click(() => localStorage.setItem("tot", 40));
+$(".ct").click(() => localStorage.setItem("tot", 52));
+$(".e").click(() => localStorage.setItem("tot", 28));
+$(".i").click(() => localStorage.setItem("tot", 28));
+$(".eg").click(() => localStorage.setItem("tot", 11));
+$(".cl").click(() => localStorage.setItem("tot", 10));
+$(".el").click(() => localStorage.setItem("tot", 11));
 
 $(".sub").click(() => {
     let mc = Number($("#mcInput").val());
