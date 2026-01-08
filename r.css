@@ -9,11 +9,11 @@ body {
     color: #e5e7eb;
 }
 .container {
-    min-height: 100vh;                 /* Full screen height */
-    display: flex;                     /* Enable flexbox */
-    flex-direction: column;            /* Vertical layout */
-    align-items: center;               /* Center horizontally */
-    padding: 40px 20px;                /* Space around content */
+    min-height: 100vh;              
+    display: flex;                   
+    flex-direction: column;          
+    align-items: center;            
+    padding: 40px 20px;             
 }
 .container  > h3 {
     font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
