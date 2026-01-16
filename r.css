@@ -5,7 +5,6 @@
     padding: 0;
 }
 
-/* GLOBAL */
 body {
     width: 100vw;
     height: 100vh;
@@ -18,36 +17,33 @@ body {
     overflow: hidden;
 }
 
-/* RESULT WRAPPER */
-.result-wrapper {
+/* ===== DESKTOP / GLOBAL ===== */
+.result-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 22px;
+    gap: 32px;
     text-align: center;
 }
 
-/* LABEL */
 .result-title {
-    font-size: 1.7rem;
-    font-weight: 500;
+    font-size: 1.9rem;
+    font-weight: 600;
     opacity: .9;
+    letter-spacing: -0.014em;
 }
 
-/* HERO VALUE */
 .result-value {
-    font-size: clamp(3rem, 14vw, 5rem);
+    font-size: clamp(3.2rem, 14vw, 5.2rem);
     font-weight: 800;
     letter-spacing: -0.02em;
 }
 
-/* BUTTON */
 .GTH {
-    margin-top: 10px;
-    padding: 14px 28px;
+    padding: 16px 36px;
     background: linear-gradient(145deg, #ef4444, #b91c1c);
-    font-size: 1.1rem;
-    font-weight: 600;
+    font-size: 1.2rem;
+    font-weight: 650;
     border: none;
     border-radius: 14px;
     color: white;
@@ -65,16 +61,28 @@ body {
     transform: scale(0.96);
 }
 
-/* MOBILE FIX */
+/* ===== MOBILE (OLDER GOOD VERSION RESTORED) ===== */
 @media(max-width: 600px) {
-    .result-title {
-        font-size: 1.5rem;
+
+    .result-container {
+        gap: 26px;
+        padding: 30px 14px;
     }
+
+    .result-title {
+        font-size: 1.6rem;
+        font-weight: 600;
+    }
+
     .result-value {
         font-size: clamp(3.2rem, 18vw, 5.6rem);
+        font-weight: 820;
     }
+
     .GTH {
-        font-size: 1rem;
-        padding: 13px 26px;
+        font-size: 1.15rem;
+        padding: 14px 28px;
+        border-radius: 12px;
+        box-shadow: 0 6px 12px rgba(0,0,0,.3);
     }
 }
