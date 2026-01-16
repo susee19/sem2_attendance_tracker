@@ -35,7 +35,7 @@ body {
     color: #f8fafc;
 }
 .GTH {
-    margin-top: 24px;
+    margin-top: 40px;
     font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
     font-weight: 600;
     font-size: 1.05rem;
@@ -45,11 +45,12 @@ body {
     border: none;
     border-radius: 14px;
 
-    background: linear-gradient(145deg, #ef4444, #b91c1c); /* same as previous */
+    background: linear-gradient(145deg, #ef4444, #b91c1c);
     color: white;
     cursor: pointer;
 
     box-shadow: 0 10px 20px rgba(0,0,0,0.35);
+
     transition: all .25s ease;
     display: inline-flex;
     justify-content: center;
