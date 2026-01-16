@@ -14,69 +14,78 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     padding: 40px 20px;
-    justify-content: center;  
+    text-align: center;
+    gap: 28px;
 }
 
+/* DESKTOP/TABLET */
 .container > h3 {
-    font-size: 2.7rem;
-    font-weight: 600;
-    letter-spacing: -.015em;
-    line-height: 1.05;
+    font-size: 2.2rem;
+    font-weight: 600;       /* <-- keeps h3 semi-bold */
     margin: 0;
     color: #f8fafc;
 }
+
 .container > h1 {
-    font-size: 2.7rem;
-    font-weight: 600;
-    letter-spacing: -.015em;
-    line-height: 1.05;
+    font-size: clamp(2.5rem, 7vw, 3.4rem);
+    font-weight: 700;       /* <-- stronger display weight */
+    margin: 0 0 6px 0;
     color: #f8fafc;
 }
-.GTH {
-    margin-top: 40px;
-    font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
-    font-weight: 600;
-    font-size: 1.05rem;
-    letter-spacing: -.015em;
 
-    padding: 14px 28px;
+/* CTA BUTTON */
+.GTH {
+    margin-top: 8px;
+    padding: 14px 32px;
     border: none;
     border-radius: 14px;
-
     background: linear-gradient(145deg, #ef4444, #b91c1c);
     color: white;
+    font-size: 1.15rem;
+    font-weight: 600;       /* <-- button text weight! */
     cursor: pointer;
-
     box-shadow: 0 10px 20px rgba(0,0,0,0.35);
-
     transition: all .25s ease;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
 }
+
 .GTH:hover {
-    transform: translateY(-6px) scale(1.04);
+    transform: translateY(-6px) scale(1.05);
     box-shadow: 0 16px 28px rgba(0,0,0,0.45);
 }
 
 .GTH:active {
-    transform: scale(0.96);
+    transform: scale(0.97);
 }
 
+/* =======================
+   MOBILE
+   ======================= */
 
-
-/* RESPONSIVE */
 @media (max-width: 600px) {
-    .container > .body {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 18px;
+
+    .container {
+        padding: 30px 14px;
+        gap: 22px;
     }
-     .GTH {
-        font-size: .90rem;
-        padding: 10px 22px;
-        border-radius: 10px;
+
+    .container > h3 {
+        font-size: 1.8rem;
+        font-weight: 600;   /* still semi-bold */
+    }
+
+    .container > h1 {
+        font-size: clamp(2.6rem, 12vw, 4rem);
+        font-weight: 750;   /* <-- Now PROPER DISPLAY WEIGHT 🤌 */
+    }
+
+    .GTH {
+        font-size: 1.15rem;
+        font-weight: 650;   /* stronger so it doesn't look cheap */
+        padding: 14px 26px;
+        border-radius: 12px;
         box-shadow: 0 6px 12px rgba(0,0,0,.3);
     }
 }
