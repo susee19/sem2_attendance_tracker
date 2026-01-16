@@ -1,3 +1,4 @@
+/* RESET */
 * {
     box-sizing: border-box;
 }
@@ -10,40 +11,46 @@ body {
     color: #e5e7eb;
 }
 
-.container.result-container {
+/* RESULT CONTAINER — standalone */
+.result-container {
     min-height: 100vh;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;   /* **THIS IS THE FIX** */
-    align-items: center;
+    justify-content: center;     /* centers vertically */
+    align-items: center;         /* centers horizontally */
     text-align: center;
-    gap: 32px;
     padding: 40px 20px;
+    gap: 32px;                   /* spacing between elements */
 }
 
+/* TITLE */
 .result-title {
-    font-size: 2rem;
+    font-size: 1.9rem;
     font-weight: 600;
     color: rgba(255,255,255,0.95);
-    letter-spacing: -0.015em;
+    letter-spacing: -0.014em;
 }
 
+/* HERO RESULT */
 .result-value {
-    font-size: clamp(3rem, 14vw, 5rem);
+    font-size: clamp(3.2rem, 14vw, 5.2rem);
     font-weight: 800;
-    color: #f8fafc;
+    color: #ffffff;
     letter-spacing: -0.02em;
 }
 
+/* CTA BUTTON */
 .GTH {
     padding: 16px 36px;
     border: none;
     border-radius: 14px;
     background: linear-gradient(145deg, #ef4444, #b91c1c);
     color: white;
+    cursor: pointer;
     font-weight: 650;
     font-size: 1.2rem;
-    cursor: pointer;
+
     box-shadow: 0 10px 20px rgba(0,0,0,0.35);
     transition: all .25s ease;
 }
@@ -60,18 +67,25 @@ body {
 /* MOBILE */
 @media(max-width: 600px) {
 
+    .result-container {
+        gap: 26px;
+        padding: 30px 14px;
+    }
+
     .result-title {
-        font-size: 1.7rem;
+        font-size: 1.6rem;
+        font-weight: 600;
     }
 
     .result-value {
-        font-size: clamp(3rem, 16vw, 5.5rem);
-        font-weight: 850;
+        font-size: clamp(3rem, 16vw, 5.6rem);
+        font-weight: 820;
     }
 
     .GTH {
         font-size: 1.15rem;
+        padding: 14px 28px;
         border-radius: 12px;
-        padding: 14px 30px;
+        box-shadow: 0 6px 12px rgba(0,0,0,.3);
     }
 }
