@@ -1,0 +1,117 @@
+/* =======================
+   1. GLOBAL RESET & BASE
+   ======================= */
+
+* {
+    box-sizing: border-box;
+}
+
+/* Removes default spacing & sets base font */
+body {
+    margin: 0;
+    font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    background: linear-gradient(135deg, #0f172a, #020617);
+    color: #e5e7eb;
+}
+
+/* =======================
+   2. MAIN CONTAINER
+   ======================= */
+
+.container {
+    min-height: 100vh;                 /* Full screen height */
+    display: flex;                     /* Enable flexbox */
+    flex-direction: column;            /* Vertical layout */
+    align-items: center;               /* Center horizontally */
+    padding: 40px 20px;                /* Space around content */
+}
+
+/* =======================
+   3. HEADER SECTION
+   ======================= */
+
+.container > .head {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.container > .head > h1 {
+    font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 2.2rem;
+    font-weight: 600;
+    letter-spacing: -.015em;
+    line-height: 1.05;
+    margin: 0;
+    color: #f8fafc;
+}
+
+/* Subtle underline effect */
+.container > .head > h1::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #ef4444;
+    margin: 10px auto 0;
+    border-radius: 5px;
+}
+
+/* =======================
+   4. BUTTON GRID (BODY)
+   ======================= */
+
+.container > .body {
+    display: flex;
+    flex-wrap: wrap;                   /* Wrap on small screens */
+    gap: 24px;                         /* Space between buttons */
+    justify-content: center;
+    align-items: center;
+    max-width: 650px;
+}
+.par {
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display",
+               "SF Pro Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.88); /* works for dark backgrounds */
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 24px 0;
+  letter-spacing: -0.01em;
+}
+.start {
+    margin-top: 40px;
+    font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    font-size: 1.05rem;
+    letter-spacing: -.015em;
+
+    padding: 14px 28px;
+    border: none;
+    border-radius: 14px;
+
+    background: linear-gradient(145deg, #ef4444, #b91c1c);
+    color: white;
+    cursor: pointer;
+
+    box-shadow: 0 10px 20px rgba(0,0,0,0.35);
+
+    transition: all .25s ease;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.start:hover {
+    transform: translateY(-6px) scale(1.04);
+    box-shadow: 0 16px 28px rgba(0,0,0,0.45);
+}
+
+.start:active {
+    transform: scale(0.96);
+}
+
+
