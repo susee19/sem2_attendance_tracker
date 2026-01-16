@@ -10,33 +10,31 @@ body {
     color: #e5e7eb;
 }
 
-.result-container {
+.container.result-container {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: center;   /* **THIS IS THE FIX** */
     align-items: center;
-    gap: 32px; /* more breathing space */
-    padding: 40px 20px;
     text-align: center;
+    gap: 32px;
+    padding: 40px 20px;
 }
 
 .result-title {
-    font-size: 1.8rem;
-    font-weight: 550;
-    color: rgba(255,255,255,0.9);
+    font-size: 2rem;
+    font-weight: 600;
+    color: rgba(255,255,255,0.95);
     letter-spacing: -0.015em;
 }
 
-/* HERO VALUE */
-#h1.result-value {
-    font-size: clamp(3.2rem, 14vw, 5rem);
+.result-value {
+    font-size: clamp(3rem, 14vw, 5rem);
     font-weight: 800;
     color: #f8fafc;
     letter-spacing: -0.02em;
 }
 
-/* CTA BUTTON */
 .GTH {
     padding: 16px 36px;
     border: none;
@@ -62,24 +60,18 @@ body {
 /* MOBILE */
 @media(max-width: 600px) {
 
-    .result-container {
-        gap: 26px;
-        padding: 28px 12px;
-    }
-
     .result-title {
-        font-size: 1.55rem;
-        font-weight: 600;
+        font-size: 1.7rem;
     }
 
-    #h1.result-value {
-        font-size: clamp(3rem, 15vw, 5.4rem);
-        font-weight: 820;
+    .result-value {
+        font-size: clamp(3rem, 16vw, 5.5rem);
+        font-weight: 850;
     }
 
     .GTH {
         font-size: 1.15rem;
-        padding: 14px 28px;
         border-radius: 12px;
+        padding: 14px 30px;
     }
 }
