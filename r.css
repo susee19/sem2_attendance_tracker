@@ -64,25 +64,18 @@ body {
 /* ===== MOBILE (OLDER GOOD VERSION RESTORED) ===== */
 @media(max-width: 600px) {
 
-    .result-container {
-        gap: 26px;
-        padding: 30px 14px;
-    }
-
     .result-title {
-        font-size: 1.6rem;
-        font-weight: 600;
+        font-size: 1.7rem;
     }
 
     .result-value {
-        font-size: clamp(3.2rem, 18vw, 5.6rem);
-        font-weight: 820;
+        font-size: clamp(3rem, 16vw, 5.5rem);
+        font-weight: 850;
     }
 
     .GTH {
         font-size: 1.15rem;
-        padding: 14px 28px;
         border-radius: 12px;
-        box-shadow: 0 6px 12px rgba(0,0,0,.3);
+        padding: 14px 30px;
     }
 }
