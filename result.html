@@ -1,16 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Result</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Result</title>
+    <link rel="stylesheet" href="./r.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="./r.css" />
 </head>
 <body>
-<div class="container">
-<h3>Your Attendance Percentage Is</h3>
-<h1 id="h1"></h1>
-<button class="GTH" onclick="window.location.href='index.html'">Go to Home</button>
+
+<div class="result-container">
+
+    <div class="result-title">Your attendance percentage is</div>
+
+    <div id="h1" class="result-value">--%</div>
+
+    <button class="GTH" onclick="window.location.href='index.html'">Go to Home</button>
+
 </div>
+
 <script src="index.js"></script>
 </body>
 </html>
